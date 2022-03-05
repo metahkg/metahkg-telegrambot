@@ -1,4 +1,3 @@
-import beautify from "json-beautify";
 import { MongoClient } from "mongodb";
 import { mongouri } from "../../common";
 export async function getcomment(tid: number, cid: number) {
@@ -23,5 +22,5 @@ export async function getcomment(tid: number, cid: number) {
       },
     }
   ))?.conversation?.[0];
-  return beautify(r, null, 2);
+  return JSON.stringify(r, null, 2);
 }
