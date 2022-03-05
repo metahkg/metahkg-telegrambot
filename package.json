@@ -1,0 +1,23 @@
+{
+  "name": "metahkg-telegrambot",
+  "version": "0.0.1",
+  "repository": "https://gitlab.com/metahkg/telegrambot",
+  "author": "wcyat",
+  "license": "MIT",
+  "scripts": {
+    "start": "node dist/server.js",
+    "build": "npx tsc",
+    "deploy": "yarn run build && yarn run start"
+  },
+  "devDependencies": {
+    "@types/node-telegram-bot-api": "^0.56.0",
+    "typescript": "^4.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "json-beautify": "^1.1.1",
+    "mongodb": "^4.4.1",
+    "node-telegram-bot-api": "^0.56.0",
+    "system-commands": "^1.1.7"
+  }
+}
