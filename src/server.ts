@@ -41,7 +41,7 @@ bot.on("message", async (msg) => {
     bot.sendMessage(chatId, "permission denied");
     return;
   }
-  let exe: any;
+  let exe: string | boolean;
   console.log(command[0]);
   try {
     switch (command[0]) {
